@@ -65,6 +65,7 @@
 }
 .tabs .tabs-item-selected {
   display: block;
+  animation: fade-in 1s ease-in;
 }
 .tabs .tabs-links {
   display: flex;
@@ -89,6 +90,22 @@
 }
 .tabs .tabs-link-selected:hover {
   background-color: #ffffff;
+}
+@keyframes fade-in {
+  0% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes fade-out {
+  0% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
 }
 body {
   box-sizing: border-box;
