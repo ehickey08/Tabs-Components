@@ -28,6 +28,7 @@
   align-items: center;
   margin-top: 10px;
   border: 2.5px solid #931d25;
+  animation: slide-in 1s ease-in;
 }
 .dropdown .dropdown-link {
   width: 100%;
@@ -43,6 +44,23 @@
 }
 .dropdown .dropdown-hidden {
   display: none;
+  animation: slide-out 1s ease-in forwards;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slide-out {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
 }
 .tabs {
   width: 100%;
